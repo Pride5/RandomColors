@@ -1,0 +1,51 @@
+* {
+    padding: 0; /* анешний отступ*/
+    margin: 0; /* унутренний отступ*/
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex; /* блоки*/
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* направление блоков*/
+    justify-content: space-around; /*определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси flex контейнера, */
+    align-items: center; /* тоже самое что выше только в перпендекулярном направлении*/
+}
+
+.col h2 {
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 13px;
+    transition: background 0.4s;
+    
+}
+.col h2:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+
+} 
+
+.col button {
+    outline: none;
+    border: none;
+    background: transparent; /* прозрачный фон*/
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    border-radius: 13px;
+    transition: background 0.4s;
+}
+.col button:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
+    
+}
+
+
